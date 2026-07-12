@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-roadmap-source="https://raw.githubusercontent.com/consecrated-hammer/playlistpolisher/main/docs/roadmap.md">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playlist Polisher | Roadmap</title>
+    <meta name="description" content="Playlist Polisher roadmap and planned features.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://playlistpolisher.com/roadmap.html">
+
+    <meta property="og:title" content="Playlist Polisher Roadmap">
+    <meta property="og:description" content="Roadmap themes, planned features, and upcoming improvements.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://playlistpolisher.com/roadmap.html">
+    <meta property="og:image" content="https://playlistpolisher.com/assets/logo-1200x628.png">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="page roadmap-page">
+      <header class="site-header container">
+        <a class="logo" href="/">
+          <img src="/assets/logo-720.svg" alt="Playlist Polisher logo">
+          <span>Playlist Polisher</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/roadmap.html">Roadmap</a>
+          <a href="https://github.com/consecrated-hammer/playlistpolisher" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+        <div class="nav-cta"></div>
+      </header>
+
+      <main class="container">
+        <section class="section">
+          <div class="roadmap-section markdown" data-roadmap-target>
+            <h1>Playlist Polisher - Development Roadmap</h1>
+
+            <h2>Core Operations</h2>
+            <ul>
+              <li><strong>Scheduled duplicate detection</strong> - Automated dedupe on recurring schedule</li>
+              <li><strong>Merge playlists</strong> - Combine multiple playlists into one</li>
+              <li><strong>Split playlists</strong> - Divide playlist by criteria (genre, artist, year, duration)</li>
+              <li><strong>Import playlists</strong> - Bulk import from CSV, text file, or other sources</li>
+              <li><strong>Undo operations</strong> - Revert playlist to previous state (snapshot-based)</li>
+              <li><strong>Playlist views</strong> - Allow users to change to a table or list view</li>
+            </ul>
+
+            <h2>Advanced Sorting Options</h2>
+            <ul>
+              <li>Sort by Popularity</li>
+              <li>Sort by Release Date</li>
+              <li>Sort by Artist (album-aware grouping)</li>
+              <li>Sort by Album Order (track number)</li>
+              <li>Sort by Recently Added First / Oldest Added First</li>
+              <li>Sort by Tempo (BPM)</li>
+              <li>Sort by Energy Level</li>
+              <li>Sort by Danceability</li>
+              <li>Sort by Valence (mood/happiness)</li>
+              <li>Sort by Key and Mode</li>
+            </ul>
+
+            <h2>Multi-Select Operations</h2>
+            <p>Select multiple tracks for batch actions:</p>
+            <ul>
+              <li>Manual reordering of selection</li>
+              <li>Remove from playlist</li>
+              <li>Add to another playlist</li>
+              <li>Copy to new playlist</li>
+            </ul>
+
+            <h2>Export &amp; Sharing</h2>
+            <ul>
+              <li>Export playlist as CSV/JSON</li>
+              <li>Share playlist snapshot as read-only link</li>
+              <li>Backup playlists to user's account/cloud storage</li>
+            </ul>
+
+            <h2>Technical Improvements</h2>
+            <ul>
+              <li>Add comprehensive test coverage (frontend &amp; backend)</li>
+              <li>Implement rate limiting for Spotify API calls</li>
+              <li>Optimize large playlist handling (pagination, virtualization)</li>
+              <li>Implement retry logic for failed Spotify API calls</li>
+              <li>Add logging and monitoring (error tracking, performance metrics)</li>
+            </ul>
+
+            <h2>Mobile</h2>
+            <ul>
+              <li>Mobile app (React Native or PWA)</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <h4>Playlist Polisher</h4>
+            <p>Self-hosted Spotify playlist management for people who want clean libraries and full control.</p>
+          </div>
+          <div>
+            <h4>Project</h4>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher" target="_blank" rel="noreferrer">GitHub repository</a><br>
+            <a href="https://buymeacoffee.com/playlistpolisher" target="_blank" rel="noreferrer">Buy me a coffee</a>
+          </div>
+          <div>
+            <h4>More</h4>
+            <a href="/">Home</a><br>
+            <a href="/privacy.html">Privacy policy</a><br>
+            <a href="/terms.html">Terms of service</a><br>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/blob/main/LICENSE" target="_blank" rel="noreferrer">MIT license</a><br>
+            <a href="mailto:maintainer@playlistpolisher.com">maintainer@playlistpolisher.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="/roadmap.js" defer></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="playlistpolisher" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  </body>
+</html>

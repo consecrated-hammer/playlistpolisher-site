@@ -1,0 +1,4 @@
+# Static site source only.
+*.log
+.DS_Store
+.env

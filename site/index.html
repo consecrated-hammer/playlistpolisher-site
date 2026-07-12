@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playlist Polisher | Self-hosted Spotify playlist management</title>
+    <meta name="description" content="Playlist Polisher is a self-hosted Spotify playlist management tool. Clean, sort, and polish playlists with Docker, previews, and safe automation.">
+    <meta name="keywords" content="Playlist Polisher, Spotify playlist manager, self-hosted, Docker, playlist cleanup, playlist sorting">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://playlistpolisher.com/">
+
+    <meta property="og:title" content="Playlist Polisher">
+    <meta property="og:description" content="Self-hosted Spotify playlist management. Clean, sort, and polish playlists with Docker and safe previews.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://playlistpolisher.com/">
+    <meta property="og:image" content="https://playlistpolisher.com/assets/logo-1200x628.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Playlist Polisher">
+    <meta name="twitter:description" content="Self-hosted Spotify playlist management. Clean, sort, and polish playlists with Docker and safe previews.">
+    <meta name="twitter:image" content="https://playlistpolisher.com/assets/logo-1200x628.png">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Playlist Polisher",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Docker",
+        "softwareVersion": "3",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "url": "https://playlistpolisher.com",
+        "description": "Self-hosted Spotify playlist management tool for cleaning, sorting, and polishing playlists.",
+        "codeRepository": "https://github.com/consecrated-hammer/playlistpolisher"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header container">
+        <a class="logo" href="/">
+          <img src="/assets/logo-720.svg" alt="Playlist Polisher logo">
+          <span>Playlist Polisher</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/roadmap.html">Roadmap</a>
+          <a href="https://github.com/consecrated-hammer/playlistpolisher" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+        <div class="nav-cta"></div>
+      </header>
+
+      <main class="container">
+        <section class="hero">
+          <div class="animate-in">
+            <p class="eyebrow">Self-hosted Spotify care</p>
+            <h1>Clean, sort, and polish your Spotify playlists.</h1>
+            <p>
+              Playlist Polisher is a modern, self-hosted playlist manager that helps you tidy playlists,
+              remove duplicates, and keep your library organized. Preview every change, run it in your own
+              Docker stack, and keep full control of your data.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://github.com/consecrated-hammer/playlistpolisher" target="_blank" rel="noreferrer">View GitHub</a>
+              <a class="btn btn-ghost" href="/roadmap.html">Read the roadmap</a>
+            </div>
+            <div class="badge-row">
+              <span class="badge">Open source (MIT)</span>
+              <span class="badge">Docker + Compose ready</span>
+            </div>
+          </div>
+          <div class="hero-card animate-in">
+            <h2>What it does</h2>
+            <ul class="feature-list">
+              <li>Grid, list, and table views for every playlist you own or follow.</li>
+              <li>In-place sorting by artist, album, title, or date added with fast or preserve modes.</li>
+              <li>Duplicate detection with review, removal, and ignore options.</li>
+              <li>Schedule operations, track history, and undo recent actions.</li>
+              <li>Cache track metadata and enjoy in-app playback (premium).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="features" class="section">
+          <h2>Features that keep playlists in shape</h2>
+          <p class="section-lead">
+            Built for self-hosters who want control, speed, and safe automation. Everything happens inside your own
+            Docker environment, with OAuth authentication and no surprises.
+          </p>
+          <div class="grid features">
+            <div class="card">
+              <h3>Playlist library views</h3>
+              <p>Switch between grid, list, and table layouts. Filter by ownership and sort by name, track count, or recency.</p>
+            </div>
+            <div class="card">
+              <h3>Playlist detail tools</h3>
+              <p>Edit names and descriptions, clone playlists, delete them, and search tracks in place.</p>
+            </div>
+            <div class="card">
+              <h3>Sorting and duplicates</h3>
+              <p>In-place sorting and duplicate detection are core features you cannot do in the Spotify app.</p>
+            </div>
+            <div class="card">
+              <h3>In-app playback</h3>
+              <p>Premium Spotify users can play tracks in-app with queue, now playing, and rich metadata panels.</p>
+            </div>
+            <div class="card">
+              <h3>Cache and metadata</h3>
+              <p>Track metadata cache with stats, refresh controls, and automatic warming for faster browsing.</p>
+            </div>
+            <div class="card">
+              <h3>Scheduling and history</h3>
+              <p>Schedule sorts and cache refreshes, then review history and undo operations when needed.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>How it works</h2>
+          <p class="section-lead">
+            Playlist Polisher runs entirely in your environment. Connect your Spotify app credentials, then manage
+            playlists from your browser.
+          </p>
+          <div class="grid steps">
+            <div class="step">
+              <span>1</span>
+              <h3>Set up Spotify credentials</h3>
+              <p>Create a Spotify Developer app and add the redirect URL for your local host.</p>
+            </div>
+            <div class="step">
+              <span>2</span>
+              <h3>Launch the containers</h3>
+              <p>Copy the Compose file, configure your .env, and start the stack with Docker Compose.</p>
+            </div>
+            <div class="step">
+              <span>3</span>
+              <h3>Authenticate and explore</h3>
+              <p>Sign in with Spotify to browse playlists, track details, and sorting tools.</p>
+            </div>
+            <div class="step">
+              <span>4</span>
+              <h3>Preview and apply changes</h3>
+              <p>Review every change before you commit, then polish playlists with confidence.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="self-hosting" class="section">
+          <h2>Self-hosting quick start</h2>
+          <p class="section-lead">Use the quick start from the README to get running locally in minutes.</p>
+          <div class="card">
+            <pre><code>mkdir playlist-polisher && cd playlist-polisher
+curl -O https://raw.githubusercontent.com/consecrated-hammer/playlistpolisher/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/consecrated-hammer/playlistpolisher/main/.env.example
+mv .env.example .env
+# Edit .env with your Spotify credentials
+
+docker compose up -d</code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Docs and guides</h2>
+          <p class="section-lead">Everything you need to deploy, configure, and contribute lives in the GitHub repository.</p>
+          <div class="doc-links">
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/blob/main/docs/self-hosting.md" target="_blank" rel="noreferrer">
+              <strong>Self-hosting guide</strong>
+              <span>Full deployment instructions</span>
+            </a>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/blob/main/docs/spotify-app-setup.md" target="_blank" rel="noreferrer">
+              <strong>Spotify app setup</strong>
+              <span>Create OAuth credentials</span>
+            </a>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/blob/main/docs/architecture.md" target="_blank" rel="noreferrer">
+              <strong>Architecture</strong>
+              <span>System design and components</span>
+            </a>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/blob/main/SECURITY.md" target="_blank" rel="noreferrer">
+              <strong>Security policy</strong>
+              <span>Reporting and best practices</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Roadmap highlights</h2>
+          <p class="section-lead">See what is shipped, what is in progress, and what is coming next.</p>
+          <div class="roadmap-preview">
+            <div class="timeline-card">
+              <h3>Core operations</h3>
+              <p>Scheduled dedupe, merges, splits, imports, and snapshot-based undo are on deck.</p>
+            </div>
+            <div class="timeline-card">
+              <h3>Advanced sorting</h3>
+              <p>Popularity, release date, and audio feature sorting to fine-tune playlist order.</p>
+            </div>
+            <div class="timeline-card">
+              <h3>Export and sharing</h3>
+              <p>CSV/JSON exports, snapshot sharing, and backups for long-term playlist safety.</p>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/roadmap.html">View full roadmap</a>
+            <a class="btn btn-ghost" href="https://github.com/consecrated-hammer/playlistpolisher" target="_blank" rel="noreferrer">Open GitHub repo</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <h4>Playlist Polisher</h4>
+            <p>Self-hosted Spotify playlist management for people who want clean libraries and full control.</p>
+          </div>
+          <div>
+            <h4>Project</h4>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher" target="_blank" rel="noreferrer">GitHub repository</a><br>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/releases" target="_blank" rel="noreferrer">Releases</a><br>
+            <a href="https://buymeacoffee.com/playlistpolisher" target="_blank" rel="noreferrer">Buy me a coffee</a>
+          </div>
+          <div>
+            <h4>More</h4>
+            <a href="/privacy.html">Privacy policy</a><br>
+            <a href="/terms.html">Terms of service</a><br>
+            <a href="/roadmap.html">Roadmap</a><br>
+            <a href="https://github.com/consecrated-hammer/playlistpolisher/blob/main/LICENSE" target="_blank" rel="noreferrer">MIT license</a><br>
+            <a href="mailto:consecrated-hammer@outlook.com">consecrated-hammer@outlook.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="playlistpolisher" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  </body>
+</html>
